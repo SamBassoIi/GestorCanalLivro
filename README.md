@@ -14,4 +14,4 @@ Aplicação web interativa desenvolvida para o controle de inventário e gestão
 * Interface limpa e intuitiva para o usuário final.
 
 ## 🔗 Acesso ao Projeto
-🌐 **[Acessar Sistema de Livros](kaleidoscopic-toffee-4ec489.netlify.app)**
+🌐 **[Acessar Sistema de Livros](https://kaleidoscopic-toffee-4ec489.netlify.app)**
