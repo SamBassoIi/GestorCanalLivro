@@ -1,0 +1,371 @@
+[
+  {
+    "id": "1",
+    "nome": "Escola Anglo Aldeia",
+    "alunos": [
+      {
+        "id": "1769777178780",
+        "data": "30/01/2026",
+        "nome": "ICaê Ometto Burgo Braga",
+        "turmaBase": "Infantil 1",
+        "turmaCompleta": "Infantil 1 - A",
+        "valor": 0,
+        "status": "pendente",
+        "livros": [],
+        "obs": "",
+        "tags": []
+      },
+      {
+        "id": "1769777178782",
+        "data": "30/01/2026",
+        "nome": "Catarina Rouver Stanger",
+        "turmaBase": "Infantil 1",
+        "turmaCompleta": "Infantil 1 - A",
+        "valor": 0,
+        "status": "pendente",
+        "livros": [],
+        "obs": "",
+        "tags": []
+      },
+      {
+        "id": "1769777178783",
+        "data": "30/01/2026",
+        "nome": "IEIoá Santos Koziol",
+        "turmaBase": "Infantil 1",
+        "turmaCompleta": "Infantil 1 - A",
+        "valor": 0,
+        "status": "pendente",
+        "livros": [],
+        "obs": "",
+        "tags": []
+      },
+      {
+        "id": "1769777178783",
+        "data": "30/01/2026",
+        "nome": "Fioreila Wolf Haliski Moraes",
+        "turmaBase": "Infantil 1",
+        "turmaCompleta": "Infantil 1 - A",
+        "valor": 0,
+        "status": "pendente",
+        "livros": [],
+        "obs": "",
+        "tags": []
+      },
+      {
+        "id": "1769777178784",
+        "data": "30/01/2026",
+        "nome": "Júlia Pucci Valente",
+        "turmaBase": "Infantil 1",
+        "turmaCompleta": "Infantil 1 - A",
+        "valor": 0,
+        "status": "pendente",
+        "livros": [],
+        "obs": "",
+        "tags": []
+      },
+      {
+        "id": "1769777178785",
+        "data": "30/01/2026",
+        "nome": "Lara Porto",
+        "turmaBase": "Infantil 1",
+        "turmaCompleta": "Infantil 1 - A",
+        "valor": 0,
+        "status": "pendente",
+        "livros": [],
+        "obs": "",
+        "tags": []
+      },
+      {
+        "id": "1769777178786",
+        "data": "30/01/2026",
+        "nome": "Louise Maria Zucoloto Portela",
+        "turmaBase": "Infantil 1",
+        "turmaCompleta": "Infantil 1 - A",
+        "valor": 0,
+        "status": "pendente",
+        "livros": [],
+        "obs": "",
+        "tags": []
+      },
+      {
+        "id": "1769777178787",
+        "data": "30/01/2026",
+        "nome": "Luisa Víeira de Souza",
+        "turmaBase": "Infantil 1",
+        "turmaCompleta": "Infantil 1 - A",
+        "valor": 0,
+        "status": "pendente",
+        "livros": [],
+        "obs": "",
+        "tags": []
+      },
+      {
+        "id": "1769777178789",
+        "data": "30/01/2026",
+        "nome": "Manuela Torres Cabral Rodrigues",
+        "turmaBase": "Infantil 1",
+        "turmaCompleta": "Infantil 1 - A",
+        "valor": 0,
+        "status": "pendente",
+        "livros": [],
+        "obs": "",
+        "tags": []
+      },
+      {
+        "id": "1769777178790",
+        "data": "30/01/2026",
+        "nome": "IMaria Júlia Lacerda Sales do Espirito Santo",
+        "turmaBase": "Infantil 1",
+        "turmaCompleta": "Infantil 1 - A",
+        "valor": 0,
+        "status": "pendente",
+        "livros": [],
+        "obs": "",
+        "tags": []
+      },
+      {
+        "id": "1769777178792",
+        "data": "30/01/2026",
+        "nome": "IOIívia Góes Nakaie",
+        "turmaBase": "Infantil 1",
+        "turmaCompleta": "Infantil 1 - A",
+        "valor": 0,
+        "status": "pendente",
+        "livros": [],
+        "obs": "",
+        "tags": []
+      },
+      {
+        "id": "1769777178793",
+        "data": "30/01/2026",
+        "nome": "ISantiago Barril Lopes",
+        "turmaBase": "Infantil 1",
+        "turmaCompleta": "Infantil 1 - A",
+        "valor": 0,
+        "status": "pendente",
+        "livros": [],
+        "obs": "",
+        "tags": [],
+        "detalheDesc": ""
+      }
+    ],
+    "precos": {
+      "5º Ano Fund": 1.85,
+      "7º Ano Fund": "",
+      "Infantil 4": "",
+      "Infantil 1": "0",
+      "Infantil 2": ""
+    },
+    "livrosPorTurma": {
+      "Infantil 1": [
+        {
+          "nome": "AMER SUPER SAFARI 1 SB",
+          "preco": 233
+        },
+        {
+          "nome": "AMER SUPER SAFARI 1 WB",
+          "preco": 162
+        }
+      ],
+      "Infantil 2": [
+        {
+          "nome": "AMER PIPPA AND POP 1 SB",
+          "preco": 240
+        },
+        {
+          "nome": "AMER PIPPA AND POP 1 WB",
+          "preco": 166
+        }
+      ],
+      "Infantil 3": [
+        {
+          "nome": "AMER PIPPA AND POP 2 SB",
+          "preco": 240
+        },
+        {
+          "nome": "AMER PIPPA AND POP 2 WB",
+          "preco": 166
+        }
+      ],
+      "Infantil 4": [
+        {
+          "nome": "AMER PIPPA AND POP 3 SB",
+          "preco": 240
+        },
+        {
+          "nome": "AMER PIPPA AND POP 3 WB",
+          "preco": 166
+        }
+      ],
+      "1º Ano Fund": [
+        {
+          "nome": "AMER GUESS WHAT! 1 SB",
+          "preco": 233
+        },
+        {
+          "nome": "AMER GUESS WHAT! 1 WB",
+          "preco": 175
+        },
+        {
+          "nome": "THE WEATHER TODAY",
+          "preco": 49
+        }
+      ],
+      "2º Ano Fund": [
+        {
+          "nome": "GUESS WHAT! 2 SB",
+          "preco": 233
+        },
+        {
+          "nome": "GUESS WHAT! 2 WB",
+          "preco": 175
+        },
+        {
+          "nome": "TURTLE IS A HERO",
+          "preco": 49
+        },
+        {
+          "nome": "DRAW THE WORLD",
+          "preco": 58
+        }
+      ],
+      "3º Ano Fund": [
+        {
+          "nome": "GUESS WHAT! 3 SB",
+          "preco": 233
+        },
+        {
+          "nome": "GUESS WHAT! 3 WB",
+          "preco": 175
+        },
+        {
+          "nome": "HOW CHOCOLATE IS MADE",
+          "preco": 58
+        },
+        {
+          "nome": "BAKING BREAD",
+          "preco": 49
+        }
+      ],
+      "4º Ano Fund": [
+        {
+          "nome": "GUESS WHAT! 4 SB",
+          "preco": 233
+        },
+        {
+          "nome": "GUESS WHAT! 4 WB",
+          "preco": 175
+        },
+        {
+          "nome": "MY FIRST TRAIN TRIP",
+          "preco": 49
+        },
+        {
+          "nome": "THE BOOK OF WORLD FACTS",
+          "preco": 58
+        }
+      ],
+      "5º Ano Fund": [
+        {
+          "nome": "PREPARE! 1 SB",
+          "preco": 336
+        },
+        {
+          "nome": "PREPARE! 1 WB",
+          "preco": 158
+        },
+        {
+          "nome": "POWER CUT",
+          "preco": 58
+        },
+        {
+          "nome": "SUMMER AT THE ZOO",
+          "preco": 60
+        }
+      ],
+      "6º Ano Fund": [
+        {
+          "nome": "SHAPE IT! 1 FULL COMBO",
+          "preco": 384
+        },
+        {
+          "nome": "ROBIN HOOD",
+          "preco": 103.82
+        }
+      ],
+      "7º Ano Fund": [
+        {
+          "nome": "SHAPE IT! 2 FULL COMBO",
+          "preco": 384
+        },
+        {
+          "nome": "MULAN",
+          "preco": 103.82
+        }
+      ],
+      "8º Ano Fund": [
+        {
+          "nome": "SHAPE IT! 3 FULL COMBO",
+          "preco": 384
+        },
+        {
+          "nome": "GOING SOLO",
+          "preco": 103.82
+        }
+      ],
+      "9º Ano Fund": [
+        {
+          "nome": "SHAPE IT! 4 FULL COMBO",
+          "preco": 384
+        },
+        {
+          "nome": "THE BOY IN THE STRIPED PYJAMAS",
+          "preco": 103.82
+        }
+      ],
+      "1º Ano Médio": [
+        {
+          "nome": "EVOLVE 4 SB",
+          "preco": 351
+        },
+        {
+          "nome": "EVOLVE 4 WB",
+          "preco": 239
+        },
+        {
+          "nome": "THE SPY WHO CAME IN FROM THE COLD",
+          "preco": 103.82
+        }
+      ],
+      "2º Ano Médio": [
+        {
+          "nome": "EVOLVE 5 SB",
+          "preco": 351
+        },
+        {
+          "nome": "EVOLVE 5 WB",
+          "preco": 239
+        },
+        {
+          "nome": "TALES OF THE GREEK HEROES",
+          "preco": 103.82
+        }
+      ],
+      "3º Ano Médio": [
+        {
+          "nome": "EVOLVE 6 SB",
+          "preco": 351
+        },
+        {
+          "nome": "EVOLVE 6 WB",
+          "preco": 239
+        },
+        {
+          "nome": "NINETEEN EIGHTY-FOUR",
+          "preco": 103.82
+        }
+      ]
+    },
+    "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKcAAACUCAMAAADBJsndAAAAn1BMVEX///8CUIoCUYoCUYkASIUATYgAS4cAQoIARoQARIMAQIEAPoD2+funus/6/P24xtbn7fIAOX18lbWvwtUsY5ZTgqkANnzb4+vw9PhuiazU3ujg6fAAMXnL1+Ned6DN09+bsMiNo77BztyDnLlMb5xCaZkALno5bJtkgacnVoxUeKMoXJBukrWLqcSXpb6Sn7wAJnM1SoQAGG+Ajq4/XpEg5fxyAAAYC0lEQVR4nO1ciXabyLalqIFiRoAFApNGICIGKd3vXf//t70aKChkJ5IdJ7lvra6b25YtCTZn3OecAsP4d/27/l3/rvetII/KrPhLrqrIsjIP/jSm2xVV/re47yZsuXuxXIsM6Rj/XTfZn8amlte048tALRsRjAEwxQIAY4yoRcF0uiTen8aYF/XpeW8Rhu97CxN793Vqi+jPoSzq3tkhYH4fpFwmIM7udGz+jLkm42A/AFItQkFX/3YDyGp7Tx6FuEB1d3HxO4VaHieHbCVpaguuL28NwAFx87tQBu1Ab2RpQgZU/mMwAQcK5C/gBiu2cV/+DpS5T5wbkEKEDBfkkgTzbxKjwHyjfnsX/3rnb764+A2UHBSEuu4FaCiA8v9tvuN2/q81Uy9mbqtjVNCgfC2FKRHL/8MVvvY9QrtfKNLgL6SrXOjVBBtBAhNRRIl4idWfFhlrX0ZOnf8imF5LNSfXlTwj5dDhta6PJ8R+mSZkW0igE1jFD82h3F/kT/mZapYp5TSjBQhL4Zp4MqIiCg6Wids8quoDBLNDKeGuh6BT9QtghrplytMqM8TnepKhieH0+mc3zE1MkiL2myrFcFE+vAFKno+f7k41IZosF3NEHIEVG8leYsFDcCHWwTsj0Pj/uLb6HHGQjFdw41Bu/LlGGhw1nS9Zh70e+emdoxeMthAXwxkTNOYnOuT+gNGscdIkZ8bxXmcpe/xMoPlhB96Qpkl9LyUmdOvwmnfCyRXO0T57UV4mVHwOjUGWN4dJOZ/m+Nb0eQHKO7gbmDxCAoqgafuGz0TmJuG+aJCQFPRi6vbe2e3z8UvbEiF15Ef0i5+3SF2lFvdp91mMP+/tN6R5YZqmtRGdiOk2/u5itA6Xpxm0IK0i4F4z4FhIqrmL6mebdikAAxGZS9c9Gj4nPuX9RpoyVOIpZ+HU+VZmiW3uqqgos+DMnQrkUZZHT7aV5MfDmApMztEo/RFigIfqaCnvX4HCzwAa/Mc1dZgcJIv3Tm0E/nNbtMxCd2UVd0PV8EgODmylyESXsCqjhvIv7MrwUuUXBO2rkTgiNkGdnqBPSKJB6+jSFN4zNT0iU15F1bEApb9D+dElaEplBEKIRX0TEoSH08hzEH3yxh1msqWnwEiYcgZwI1Ha/TTRP956OjtoVJwBtI4RyyflPg5OMByZ17N8riiIUi0m/HcUeofBZoENZ02VuG5SDEBSv9Xrx58EGr4KSCTOkwm5GHf51fV9m1Q95pRDBgIIZThYMz975xTmWTsA9xicm+Tr6B2JupI1jv79U5mpGtbwLpMk6o3kmZLrGdu1Bynmlbq5RJuZ3EH1myB8rISb2vJo9UG7qxKQNRb7E9k6PbD8n4AZdWgrTcySJ0ve5yI7ETJECRGnUoqG8w/BUqCsPGRox6ycYlqnpPL9fGJfPfQIQ12ieFd8HOfB0WECFo1OmExZkVUpsYnbtqraABDojBhKDg/VSyDYaD0i/FfmHW2AK8/z1fX9vNMn+xWmwOJUITZRalQIWXE1IWKqegPMRgkQtRlPxvIbM9bZFpkEcWOw6EVrbzznPmLfBGsKpfEHTTQbdGmy0+Iw63g6b/MY1XmtkvWa77EF+mN9PHzpBoBsyZCgRugBaaKJApRku10fvQCZgRcTTT4E0zvYOk4mD99oMBchSvKqZDkfKssETIAE2TvzWDGZeGVRZEV4HVnFt0KUF3K4OClEZ6+1h3iaHW4xUfIh7pSs6VJo1knyOGgGxJN4VnRIk9V0Pqfp+RLmeZb06TRM6YVT9ZBnc7gKHXI/txIWQo8580OmICKrklkY1uEj4nSwLk3TtJP+6xhlL4yqkQmjJUCykow8JVFgFPUInb2NWTjF1p7X6FmHZ4FLC+UWa8XB2aHllQUn2vdoE+5J+H6craZ14cj86ukpKlIqarLZQSwHj8ekqRiVyKp6wspaya6rq3zmn+rTIrqiJntqvQsCbhv4ztbn38+aq40TsaPLnwhE5bho00RD23jMJAMvj4qmHbj4mJVATNKny/jyP0Skek317CAYNHnuY0IYeSVz6FKn2r032geaE/Fj2W3YiUiOpsp31WnpKBhZcRxNQuznr+NZ6Bm7qWghe2UYpw4FquvABcfLPpqmyOmqnJ3DtAnUajtsvzPPV5YGk1GemDe/9nthm4MqyEknYNaDgzDaO3FTO+zqTJy2C0UPsuZptyNLu0nxE7ePsi8WRLtYmOiiOvf6PpznJWGK46Zl7FpjVTxJ25yXHRrMWWqX5UR69tnLsn6aMLGeNlYWlP4ZoLleUWTmGIQDYt+qGNPRi2U8vasKqfamjpN8yad9l1eVNyo/Z+ckp+hSGAUBEHW1yiVlmPiJzIBZ2FSR+LtXXfHMO0SEMMmhdog1fcsD48blrW/vwXnY8g/8EjVtFOJ9WdM5wrBlXcej4fUIorGs6vaYJEnYaP3ieo/MTrU8YrpGe37lCLmXLD9mFdi2SMl70rxG5+TR0ZjlIUVO1NIlvYBpPOVGzdxkl/mOTW3btqjlkHZxhSj3kssMlDmfJAkqM6WVlwwj81c0YT02vcflj5YuTpYSTeRgRo2TTBwTSgY0Wcw+GQ/CZjkRCR+jU7JlE14tW509NbXFnK0L+2cnq1yzzkei4cTwYZi5Jk6W14a63/MoNVXBuJyNCYYRJyO2ee1ZQixPnoavtXYV9KL9ipcEJj2K0ec+OHdFkExAC6Hm/uHuWLLxItA1XnYwKR7qjqryguvPTQzRXACoPBEZxc/h64QSyD8lnajvJE5OYZg1hWUSFKlzU9T1j+I8bVpegDhj4xXxYDtkTSwsKvVGcRaR0Q3HWe/OuJFnGWok3UsOk4XmGYPwpYNnFLGF4A1tenkwNEWrdc4MguK+CrJ+vu7ZjRjnjWKBDz2lsm9IN/k5v3Zuqx/Yy+rzzlX6N1k17w+UuDvHxZty/kEeeqUbcYpym1rnsEzxTNr5Ua2aETfZr4XzqQnUYOY1sFnsuT14dn1BqiE+pTYiL9cq84V7qpPah4eSp9frage271OMIHXsdPEEHjz7wIhMqW7xOd4H1QVRP7uoO0H/VU8mqqe5w8gY2JjkUVKXDQErsWfx4xGcRaoHT9SzHISTskkJMdUMi5MeZkTX/aZJT3td61EYh2XUjEP7+gxPruR6AERRnCK3z89EU/zuoZFduPJ4dijS+HuXFUNRtVa5HBOLxvmEteoImvitwwfFW/XuRcQJ0z7kHfN2NESMOKxOQR/h9UFs6ThBcf3n5LX/e4o6LOI7lFJmomuoVqIJyT8iBnGOZhDNCetSIlagDn6e6gaKrQeO4Z0X8+Sw0DX3ywxZT9yLgIpKLheSv8V5L+EF1XwdVX0YiLAqPAU16P3SO6LNxG73QI4v146SsHXnmjUTwlmIZheSgwO2amquwdCEuzvhJDg/T2M/To5jE3KRkYzGOY9Wpm1uQr1d38cZrslIdjmYtxOSRMzSwRyUABGRuF5rOf6PnKr8hztsGvD89esz90Zyynn3mffyunaEFt5GeoDi+zhX81ymWExBl1EDhaRjzzjVzhXe1Yl/aKLFsQ5bYkHAUni2M2WhbM/ZVI/05Mt9U1/Nc9WF6K9J8sDbSVRqmFE67lXzzJCf9BFOFh1syqM/XPKSWhqrvz9bCNY6cxHU7RqqGeeTJLmLSOkjHh8cdrxMPyNTi2oCpNZfvxtBI3SLkwlsmVPLUkyWb94h8dHmUiyZJYM73hqlXB9P6EYAQHN5+26Kb7SKA2rGp/yF8yfZpM5L40j1t4HF5RQkT/f6bjVnbgeNOL8af3Hy8OPl65XROuQ15wKML7qQi6OtwwR8vhJc3Ls8tzLZlVw2BF/JVOFs713rcUOWtpc89zWso/pwTHULE2GgfdZGAlHVNE2VRTcnLTjRmHHOTT+o3FQueje3/Ydu5MlihDTRBRAw3Xr+bMD3AyzvQPtoBK2L5Lt5057Rbr/bf3VH/+akjc0uSLQClj4JuWkun+41mjYVMVP3ebI38wsGecHpucoDxPu8YWQDwUaK48lxuKNg+/CKhwTxmf2XBWSoIgXAp25TdOLpDk5Wjm/0bvn51TbBSpTYq53q/lX7jWGQ0CMYTIWRHwcbSejojb2KJebenK5FDBjCnJu6FpjwnZiRf1lJMj+E2xjNbtG47A/ulYSurhasGTOtLg6rd4sEOUA615sj1uhsXdmJkLJLjrNgmtDleZeJ6Dj5UZzKSNx1dMXtFFjKLUaERqg4FADpdRDdB1s1QfEbG0AinxWt1reg2C1NZlFqJbbuR+bzu3AyeTKcO7UxSRoTL9vFqgiLx7NY+HuD2AcAlvgNab05Nm/dhydEXdeije/CeRcZN4/GkHRsOfXXd+EEHKc4oqjo5JEddfYjosfVKKC5jWQs4Gx7byVjssOekK72Y0yWLVnclhCzLt4mhR/EKeTp7+ahpeSjJJ1trkzpOW+tZbY1y2MOicJq9Cxddm3sYM672S+M0erclcuTAm2Xw7txOo3U+wpmifK1y+qtE1rPpuUCuZDWdfAONmMe8HlWho/0z2NmXfTn9B4yf4dL1c7OffAyEWqKveWzyngRpfIz7ZKwJCycCXC9Yj7smM8TddKuZ7pV8eLg4zh5/DQqaYIzBBS3Mr33eyaacGHPMmZt8oE5N4fzPuL0m73nHtTpZY9uliiPuWI/xurw+zs4N3Ge/WOVSmkDhYOPWukgwmc9NVyZSLmsyiyKugh1YP7R4Nix/0wE2/uV7kcnbC7hDp8iI3b0OTemd3AGhy1fYpWKB7E2T8emiImR6GpWw2Ka4qqEJ2gk0PbZx4r9hVeHw+miRdMs1YID+ZIHB1ufe2w6QG8ujYdwTZM+kMx7lhh2dQZ7WdWuKXytAFjQDwz/K8fZVpszhxjICCL6iwcvOFFd7eQuD9HHcLzHwb5wsGaDZ0dEegVU7PhYes1U84nNtVuGgW8c9ywxBFtqF7S2ip5caa3hDXqjAaC7+0XqLf/EL4y1O0o/1qiTn/yMtnFokaRq5rJXu/6AdrVneGXl+4vRFViv4qhvZBToOO27s/hwU3dwcsFDm6iQ7KnVtREINq8PBW/1L6TK97ehw/UyOe6z6hR7o63SlxjrsXTkbkfxd6czxc2OEKboQnqLfdz6YKi6gxrf/d4ivOcNAZ7j6cVe3uHGMuTG1dlstrbvFtjeZs8sNOkhELEOQHL2sygq1Dwj2etpaFlgLf7WX+c/IM6PAxY73SXB8vft0Qh410DfFHy/s5hqO4H45DfNeRnEj0esoevsmSQnQG1nUOIEStlwUbqe9Nn3n3msaCJObNTwmH/GvRqlsKAV5nR/802vBSZ+DivjjbmZYpL9XGvWeBluqyiv9iyvIl6uQ7KtNAmKoBpLOddapb7nrG7jRvfDEhPUbjPa5O3CcpJzFAAt2TqPLrsl8awqXn/To7+Ssgmf+nNT2H1DV2HyVyT15kbAGpYeaNRmer/O5DN2UcMC3vG2JQFKTpbCo9um5k1gJUOrs9GTX0/22KJZ5DKHAVamRryo03cDPzDdzs3tTmRAMyOUjXiMuL96VwuZQE87G7kC7eVqEvzV9NRRloZSxVnU8JhFJb4xR7PP+62Km50M/KSMiniiOMSI+1A2ureNoRsDeBWiIKFkELuHJGSN+ENA+pyRJZ2EMLZ0Hyaf7IKNQMWBWG0MEG+mlJ39BhoZfeaYPweCVay7NE5mfglnW1m5ilUb+aQPYtmJzo/grG4VTyr2N/YLL3KrFGnAVIbUXEhxtSX6syATep4RuqbaHDQndtU8i8SWBr3YdB8abd9SZdOOjSBGkH+7GlSHbpMu1S/bZD8vcuZBJrS09t/cnxTibA1ZvOjyfGzAGd+0QAHIjMY2ndyIJgRvjHOJ7CtVukFLUh4kQke/LiVNyL20ubmF7dFdTJW+DZ0fj/dfn/ZPjOxLkkgoRVgzQWBiQpHaVMMdBlEi98wyuc8457qCfZd9GQuNMLh2y4uCrTjvNz/npW+i5fU1QLzvnxicNLKSIO3juD8t01SKJjz0bdxDNLd28OnSXk4IENucwIKTH4yQMb5e4xEg2bUArMiea6zllHh4dKPAcbMTnS1GZI1rUXGJEVxnXhB4pQ+4DbCa5BBW5ybnncSTbBVadRQYQdnSc1vVti5PMiV8chOIj0LxUcMYt7kIkC8PwtRHXXOSZ5foBWfGJDFYGELBZ32kjzwjmO1ebvuz5sGrVzBMvrXK09Q2J5XCd1AaLG225YSPeTtfeqifXZ7VAbw+Blgrjzh5QBvizbgBg6V7gW+BVZ6uth2xEttHK2OebOrm+ShMfk/UDU4elJi5Qznhyn3RIfbOhJdg/AuFHLPnLh8FBuIjYSBxwsXf5RV4iS8uhBUtvAqqb6zTdF/Pwb+78u0OEe4aU8JcwqTiIL3rCDCtAyXOCtsvolSHGBAu8eDg0msgcK5xSRQ9QWxL0nV1+OHmWmEVCybv2bh2mzt5cucv0JEVjtGz6KyyT+3EXhTGp1woJxQpAcJbC/aOaNpscHLDiwjjHPzLDd8rYFO8FSew3reb2r4pP+b4jE9xHDMDkGgShfPJhkj0OlKEUy6PZD87zWqfjilKgYLFNsSrikoUq/MOZk2e77v9WBeo3tfElJVk7B+QOGe9azjlsK7eLThXeQq6Vbl8HzYHPDOSLVN6aCuDtvLTJnnCpccFCe4OTKjZd3Dik8Dpwlc4gbg25udi04ZRDmrvsu7s+/feipTod2RrpRrfH6R6FQzna72foi1OsMXZKJzRRCBULHpx9gcG79sVfNnGJkkuIb+FaL2WHXhDnhLnK71bvGXBcHI3rwVO0bHbSJO8b5eqWJmelBS/kZ3XICuK3HjTj8hdnO48X4jU3nDtLDeDh8dW7OoakYe0RT8lnoZp9vdbeZLZPt/wI6V3TZ5wa5zkQ7d16Tf1LISdR43sK8HDHX/fv/Yj3oWf9S78aMI31gmeP3ZrT7N1JX5IeW53iZ+v/QiIVgarJGQg1XESETYZH5FxCWJzUwwD5/hdKD9eB0fXPCfhYvPw1YHfx2lCjqZ0sLyfSMMJZZxnOMX+kgLc3Gt8f0b83TVpmheW1M1OIvPmmzjlXLumg2BWb+RNlnOUAejSxPjjd5kX4CaKihlX8ZXuBLy38qaJehG5StmE1Pyd1xh8ULHbia6K78LNQ1J29YdhMrFoRJQDlSVBfTqItKHJ01T+zooj3RtWXmeZ6MyvoDzKuxXkLQPLcj9yT8+62m2en9vzc6wPX+mdd8LRWUaXMje2ejf1dkzmbCPndsPw+9dob3Ce5vwrNkeHKi71Sp5iNELHJivL8Fzc4ISap3gHW4f5kUS0XVGnP4hjGUT43HfDvSk7gAdLlHozTpMF0VNHhiUuicmrxQcw/Qwnjzc1O3F+/kkN5cvG6e3Uz8riYh3quubtxhP7WbMChJyvbMmczcp5jGWcT5jYhksctz2PlgDhtimK5jrRjauTz3jmTbGJTiZ2LepagLquyxuuhP0UW7j5C0fUZIiV7XjNmyzbWpal+j3OznX4nm8dJvrA7WZvrAZsw6gk4VDNhiGUoyL1FzT6ha/qjqtoK8HN9EbbMi1gfv2ZW3b1VQxo0wHatpBuBx48vueTZcVzxJItJ6C2bWzmRELpH7tt802gLxbYrqVjt/S9FFgqsnTVXkWgUW0zubXZvK2GmAtZn6P0GWhn3eI01/pGdULFbhaib5FK1MhRH4voC9mfCZNP+m6BLtapq188PmCdoVbT3IKXz+wB5i1Mu/uJu7TfXEGMwA3SW9tUL62D3NkdJRPRLeMVSuB++fxH8QT+6weXvfIjOc9GQ3+s6/hEydzmBNJIbr++++Snxsyr2Kam1zJdy3FCbcqfNKNL+/a79JPC5uuV/23dtKgXoKq+30xh5/vTXjmP+KLTf7ZpaisE7hunXNx5de7FJt5GCeg//q96nJVY3pHc+pNmqFKiW8ivzZJFI/Trnw3X9LeP2HuFVfOvtz6I3S78DU8F9Brw/kcWaigdq/5dz65MOvrK9R9bxJ7ubuX+xOX5vWXfR3WzTOR2337LQwvXlVdPe/cHjyd9vbD93L1xG+pvgFp3A33L+99YyAYv8Z97VG31rTddG//oaaXsLerS8dsbd8r+zpVn4QX9s7MQfsMIsHg47Z4R/D/4dFpt5c2x714GTMXd5WJRSsnw0n1pk/8OiMsKyir06+Pxb77a47H2kyb7s7q+v/7rHkT97/p/u/4PB5aXlyRzFd0AAAAASUVORK5CYII="
+  }
+]

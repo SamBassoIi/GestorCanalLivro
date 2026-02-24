@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor Canal do Livro - V51 Excel</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <input type="file" id="logoUpload" accept="image/*" style="display:none;" onchange="processarLogo(this)">
+    <input type="file" id="excelUpload" accept=".xlsx, .xls, .csv" style="display:none;" onchange="processarExcelEscola(this)">
+
+    <div id="modalRecibo" class="modal-overlay">
+        <div class="modal-box" style="width: 400px; padding: 0;">
+            <div class="modal-header" style="padding: 15px;"><span class="modal-title">Prévia do Pedido</span><button class="modal-close" onclick="fecharModal('modalRecibo')">&times;</button></div>
+            <div class="modal-body" style="padding: 0;"><div id="receiptContent" class="receipt-container"></div></div>
+            <div style="padding: 15px; display: flex; justify-content: flex-end; gap: 10px; background: #f9f9f9;">
+                <button class="btn-primary" onclick="baixarImagemRecibo()" style="width: auto; background: #4caf50;"><i class="fas fa-image"></i> Imagem</button>
+                <button class="btn-primary" onclick="imprimirReciboAcao()" style="width: auto;"><i class="fas fa-print"></i> Imprimir</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalImport" class="modal-overlay">
+        <div class="modal-box" style="width: 400px">
+            <div class="modal-header"><span class="modal-title">Importar Configurações</span><button class="modal-close" onclick="fecharModal('modalImport')">&times;</button></div>
+            <div class="modal-body"><p style="font-size:13px; color:#666">Copiar livros e preços de:</p><select id="selectImportSchool" style="width:100%; padding:10px; margin-top:5px; border:1px solid #ddd; border-radius:5px;"></select></div>
+            <div style="margin-top: 15px; display: flex; justify-content: flex-end; gap: 10px;"><button class="btn-primary" onclick="confirmarImportacao()" style="width: auto;">Importar</button></div>
+        </div>
+    </div>
+
+    <div id="modalConfigLivros" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header"><span class="modal-title"><i class="fas fa-book"></i> Livros e Preços</span><button class="modal-close" onclick="fecharModal('modalConfigLivros')">&times;</button></div>
+            <div class="modal-body"><p style="font-size:13px; color:#666">Cadastre os livros para <strong id="lblTurmaConfig">...</strong>.<br>Formato: <b>Nome do Livro ; Preço</b></p><textarea id="txtListaLivros" rows="10"></textarea></div>
+            <button class="btn-primary" onclick="salvarLivrosTurma()">Salvar Lista</button>
+        </div>
+    </div>
+    
+    <div id="modalDetalhesAluno" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header"><span class="modal-title"><i class="fas fa-user-edit"></i> Ficha do Aluno</span><button class="modal-close" onclick="fecharModal('modalDetalhesAluno')">&times;</button></div>
+            <div class="modal-body">
+                <h3 id="lblNomeAlunoDetalhe" style="margin:0 0 5px 0; color:var(--brand-primary)">Nome do Aluno</h3>
+                <p id="lblTurmaAlunoDetalhe" style="font-size:12px; color:#888; margin-bottom:20px;">Turma</p>
+                <div class="section-title">Checklist de Livros Entregues</div>
+                <div id="listaLivrosChecklist" style="max-height: 300px; overflow-y: auto;"></div>
+                <div id="areaSomaValor" style="margin-top:10px; padding:15px; background:#f0f7fc; border-radius:6px; display:none; flex-direction:column; gap:10px;">
+                    <div style="display:flex; justify-content:space-between;"><span style="font-size:14px; font-weight:bold; color:var(--brand-primary)">Soma Itens:</span><span id="lblSomaTotal" style="font-weight:bold;">R$ 0,00</span></div>
+                    <button onclick="aplicarSomaAoAluno()" style="width:100%; padding:10px; background:var(--brand-accent); color:white; border:none; border-radius:4px; cursor:pointer; font-weight:600;">Atualizar Valor</button>
+                </div>
+                <div class="section-title" style="margin-top:20px;">Observações</div>
+                <textarea id="txtObsAluno" rows="3"></textarea>
+            </div>
+            <button class="btn-primary" onclick="salvarDetalhesAluno()">Salvar Alterações</button>
+        </div>
+    </div>
+
+    <aside class="sidebar no-print">
+        <div class="sidebar-header"><img src="logo.jpeg" class="logo-sidebar-img"><span class="sidebar-title">Canal do Livro</span></div>
+        <ul class="school-list" id="listaEscolas"></ul>
+        <button class="add-school-btn" onclick="abrirModalImport()" style="border-top: 1px solid rgba(255,255,255,0.05);">
+            <i class="fas fa-exchange-alt logo-icon-sidebar" style="font-size: 18px;"></i><span class="add-text">Importar Config</span>
+        </button>
+        <button class="add-school-btn" onclick="iniciarAdicionarEscola()">
+            <i class="fas fa-plus-circle logo-icon-sidebar" style="font-size: 20px;"></i><span class="add-text">Nova Escola</span>
+        </button>
+    </aside>
+
+    <main class="main-content">
+        <div class="top-bar">
+            <div class="header-left">
+                <img src="logo.jpeg" class="brand-logo" onerror="this.onerror=null; this.style.display='none';">
+                <div class="page-title">
+                    <h2 id="tituloEscola"><span id="nomeEscolaDisplay">Carregando...</span>
+                        <button class="edit-btn" onclick="iniciarEditarNomeEscola()" title="Renomear Escola"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="edit-btn" onclick="alterarLogoEscola()" title="Alterar Logo"><i class="far fa-image"></i></button>
+                    </h2>
+                    <p>Gestão de Vendas e Controle de Livros</p>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-val" id="displayTotal">R$ 0,00</div><div class="stat-lbl">Total da Tela</div>
+                    <button onclick="gerarRelatorioFinanceiro()" style="margin-top:5px; width:100%; border:none; background:#eee; cursor:pointer; padding:2px; font-size:10px; border-radius:4px;"><i class="fas fa-chart-pie"></i> Relatório Financeiro</button>
+                </div>
+                <div class="stat-box" style="border-left-color: var(--brand-primary);"><div class="stat-val" id="displayQtd">0</div><div class="stat-lbl">Vendas</div></div>
+            </div>
+        </div>
+
+        <div class="controls-grid no-print">
+            <div class="card">
+                <span class="section-title"><i class="fas fa-filter"></i> Filtros e Busca</span>
+                <div style="margin-bottom: 15px; position: relative;">
+                    <i class="fas fa-search" style="position: absolute; left: 10px; top: 12px; color: #999;"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar aluno..." onkeyup="filtrarTabela()" style="padding-left: 35px; border-radius: 20px;">
+                </div>
+                <div id="visualTurmaSelector" class="turma-selector-container"></div>
+                <div id="selecaoAtualInfo" class="info-panel"><span><i class="fas fa-check-circle"></i> Selecionado: <span id="txtTurmaSelecionada">Nenhuma</span></span><span id="txtPrecoAtual">R$ 0,00</span></div>
+                <div id="addAlunoContainer" style="display: flex; gap: 10px;"><input type="text" id="inputNome" placeholder="Digite o nome..." onkeypress="if(event.key==='Enter') addManual()"><button class="btn-primary" style="width: 120px;" onclick="addManual()">Adicionar</button></div>
+                <div id="msgTodas" style="display: none; color: #999; font-size: 12px; font-style: italic;"><i class="fas fa-info-circle"></i> Selecione uma turma específica para adicionar alunos.</div>
+            </div>
+
+            <div class="card" style="background: linear-gradient(135deg, #ffffff 0%, #f0f7fc 100%); border-color: #b3e5fc;">
+                <span class="section-title"><i class="fas fa-upload"></i> Importação em Massa</span>
+                
+                <label for="excelUpload" style="border: 2px dashed #217346; padding: 30px; text-align: center; border-radius: 8px; cursor: pointer; transition: 0.2s; background: #f0fff4; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    <i class="fas fa-file-excel" style="font-size: 32px; color: #217346;"></i>
+                    <div>
+                        <strong style="color:#217346; font-size:14px;">Importar Planilha da Escola</strong>
+                        <div style="font-size:11px; color:#666; margin-top:5px;">Excel com: Nome, Série e Turma</div>
+                    </div>
+                </label>
+
+                <div style="display: flex; gap: 10px; margin-top: 15px;">
+                    <button onclick="baixarExcel()" class="btn-tool" style="background: #217346;"><i class="fas fa-file-csv"></i> Exportar Dados</button>
+                    <button onclick="imprimirPDF()" class="btn-tool" style="background: var(--brand-primary);"><i class="fas fa-print"></i> Relatório PDF</button>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead><tr><th width="5%" class="no-print" style="text-align: center;"><input type="checkbox" class="custom-checkbox" onchange="toggleSelectAll(this)"></th><th width="10%">Data</th><th width="20%">Turma</th><th width="35%">Nome do Aluno</th><th width="15%">Situação (Tags)</th><th width="10%">Valor</th><th width="5%" class="no-print"></th></tr></thead>
+            <tbody id="tabelaCorpo"></tbody>
+        </table>
+        
+        <div id="floatingActionBar">
+            <span style="font-weight: bold; margin-right: 10px;"><span id="countSelected">0</span> Selecionados</span>
+            <button class="bar-btn" onclick="batchTag('reset')">Resetar</button>
+            <div class="separator"></div>
+            <button class="bar-btn" onclick="batchTag('func_pix')">Pix -15%</button>
+            <button class="bar-btn" onclick="batchTag('func_vista')">Créd -10%</button>
+            <button class="bar-btn" onclick="batchTag('func_parc')">Parc -5%</button>
+            <div class="separator"></div>
+            <button class="bar-btn delete" onclick="batchDelete()"><i class="fas fa-trash"></i></button>
+            <button class="bar-btn" onclick="clearSelection()" style="background: transparent; border: none;">&times;</button>
+        </div>
+
+        <div class="card no-print">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px"><span class="section-title" style="margin:0"><i class="fas fa-book"></i> Catálogo de Livros por Turma</span><select id="selectCatalogTurma" onchange="renderCatalogTable()" style="width: 200px; padding: 5px;"></select></div>
+            <div style="display:flex; gap:10px; margin-bottom:10px; background:#f9f9f9; padding:10px; border-radius:5px;">
+                <input type="text" id="newBookName" placeholder="Nome do Livro" style="flex:2">
+                <input type="number" id="newBookPrice" placeholder="Preço" style="flex:1" step="0.01">
+                <button class="btn-primary" onclick="addBookToCatalog()" style="width:auto; font-size:20px; padding:0 15px;">+</button>
+            </div>
+            <div style="max-height:300px; overflow-y:auto;"><table class="catalog-table"><thead><tr><th>Livro</th><th width="20%">Preço</th><th width="10%"></th></tr></thead><tbody id="catalogTableBody"></tbody></table></div>
+            <div style="margin-top:10px; text-align:right; font-size:12px; color:#666;">Total da Turma (Preço Cheio): <strong id="catalogTotal" style="color:var(--brand-primary)">R$ 0,00</strong></div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
